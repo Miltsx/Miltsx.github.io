@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f0e8;
+  color: #1a1814;
+  font-family: Palatino, "Palatino Linotype", "Liberation Serif", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  border-top: 0.45rem solid #1a1814;
+}
+
+main {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 2.75rem 1.25rem 4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: 1rem 0 0;
+  color: #3f3a34;
+  font-size: 1.3rem;
+  line-height: 1.45;
+}
+
+h2 {
+  margin: 2.75rem 0 0.75rem;
+  font-family: "Segoe UI", "Liberation Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+.links {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+}
+
+.links a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #d4cec2;
+  color: inherit;
+  text-decoration: none;
+}
+
+.links li:first-child a {
+  border-top: 1px solid #d4cec2;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  color: #0f3d56;
+}
+
+.links a:focus-visible {
+  outline: 2px solid #0f3d56;
+  outline-offset: 3px;
+}
+
+.label {
+  font-family: "Segoe UI", "Liberation Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.url {
+  font-family: "Segoe UI", "Liberation Sans", sans-serif;
+  font-size: 0.95rem;
+  color: #1e4d6b;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  overflow-wrap: anywhere;
+}
+
+.links a:hover .url,
+.links a:focus-visible .url {
+  color: #0f3d56;
+}
+
+@media (min-width: 40rem) {
+  main {
+    padding: 5rem 1.5rem 5.5rem;
+  }
+
+  .links a {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+}
